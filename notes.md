@@ -1,5 +1,10 @@
-### Links
- - Getting Started with Node.js - Full Tutorial - https://www.youtube.com/watch?v=gG3pytAY2MY
+> process.env.USER
+'zampieri'
 
-### Examples
- - file `main.md` has a lot of examples
+> process.env.USER = 'baba'
+'baba'
+
+// process.stdout(Math.random().toString());
+
+// console.log(process, { depth: 0 });
+
