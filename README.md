@@ -6,3 +6,6 @@
 
 #### Use exports without ES6
  - `node example-1/index.js` or `node example-1/index2.js` 
+
+#### Require with cache and without cache
+ - `node example-2/index2.js` 
