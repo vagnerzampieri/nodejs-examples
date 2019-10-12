@@ -3,4 +3,6 @@
 
 ### Examples
  - file `notes.md` has a lot of examples
- - `node node0619/index.js`
+
+#### Use exports without ES6
+ - `node example-1/index.js` or `node example-1/index2.js` 
