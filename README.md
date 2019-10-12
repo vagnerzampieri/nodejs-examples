@@ -4,6 +4,9 @@
 ### Examples
  - file `notes.md` has a lot of examples
 
+### Useful commands
+ - see github.com/vagnerzampieri/cheatsheets/blob/master/javascript.md, there are commands to Node.js and npm.
+
 #### Use exports without ES6
  - `node example-1/index.js` or `node example-1/index2.js` 
 
