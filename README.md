@@ -17,4 +17,4 @@
  - `node --experimental-modules example-3/index2.js`
 
 #### Create a server
- - `npm dev-start`
+ - `npm run dev-start`
