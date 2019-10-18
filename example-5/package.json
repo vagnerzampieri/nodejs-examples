@@ -5,12 +5,13 @@
   "description": "Example",
   "main": "server.js",
   "scripts": {
-    "dev-start": "node --experimental-modules server.js"
+    "dev-start": "nodemon --experimental-modules server.js"
   },
   "keywords": [],
   "author": "Vagner Zampieri",
   "license": "ISC",
   "dependencies": {
-    "express": "github:expressjs/express"
+    "express": "github:expressjs/express",
+    "nodemon": "^1.19.4"
   }
 }

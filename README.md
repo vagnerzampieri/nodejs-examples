@@ -19,5 +19,5 @@
 #### Run a server with HTTP 
  - `cd /example-4 && npm run dev-start`
 
-#### Run a server with Express
+#### Run a server with Express and Nodemon (for reload automatically)
  - `cd /example-5 && npm run dev-start`
