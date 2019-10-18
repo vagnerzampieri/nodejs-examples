@@ -1,0 +1,16 @@
+{
+  "name": "example-5",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Example",
+  "main": "server.js",
+  "scripts": {
+    "dev-start": "node --experimental-modules server.js"
+  },
+  "keywords": [],
+  "author": "Vagner Zampieri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "github:expressjs/express"
+  }
+}
