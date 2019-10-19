@@ -21,3 +21,6 @@
 
 #### Run a server with Express and Nodemon (for reload automatically)
  - `cd /example-5 && npm run dev-start`
+
+### Use Promise, child_process example
+ - `cd /example-6 && npm run dev-start`
