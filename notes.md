@@ -35,3 +35,7 @@ console.log(arguments);
 ### Streams
 zip, crypto ... read, write, transform
 it's better use stream always
+
+### Scaling
+to cluster use pm2
+to http use express
