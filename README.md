@@ -27,3 +27,8 @@
 
 #### Use EventEmitter
  - `cd /example-7 && npm run dev-start`
+
+#### Express and MongoDB
+ - Build a restful API with Node.js Express & MongoDB | Rest Api Tutorial - https://www.youtube.com/watch?v=vjf774RKrLc
+ - docker-compose up
+ - `cd /example-8 && npm run dev-start`
