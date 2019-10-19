@@ -1,24 +1,14 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-
-dotenv.config();
+import { postRouter } from "./routes/posts";
 
 const app = express();
 
+dotenv.config();
+
 // Middleware
-app.use("/posts", () => {
-  console.log("This is a middleware running");
-});
-
-// Routes
-app.get("/", (req, res) => {
-  res.send({ message: "We are on home" });
-});
-
-app.get("/posts", (req, res) => {
-  res.send({ message: "We are on posts" });
-});
+app.use("/posts", postRouter);
 
 //Connect to DB
 mongoose.connect(process.env.DB_CONNECTION, {

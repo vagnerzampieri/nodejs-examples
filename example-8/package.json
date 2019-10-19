@@ -5,7 +5,7 @@
   "description": "Example",
   "main": "server.js",
   "scripts": {
-    "dev-start": "nodemon --experimental-modules server.js"
+    "dev-start": "nodemon --experimental-modules --es-module-specifier-resolution=node server.js"
   },
   "keywords": [],
   "author": "Vagner Zampieri",
