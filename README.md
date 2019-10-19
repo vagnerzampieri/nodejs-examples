@@ -8,13 +8,13 @@
  - see github.com/vagnerzampieri/cheatsheets/blob/master/javascript.md, there are commands to Node.js and npm.
 
 #### Use exports without ES6
- - `node example-1/index.js` or `node example-1/index2.js` 
+ - `cd /example-1 && node index.js` or `node index2.js` 
 
 #### Require with cache and without cache
- - `node example-2/index2.js` 
+ - `cd /example-2 && node index2.js` 
 
 #### Use ESM 
- - `node --experimental-modules example-3/index2.js`
+ - `cd /example-3 && node --experimental-modules index2.js`
 
 #### Run a server with HTTP 
  - `cd /example-4 && npm run dev-start`
@@ -24,3 +24,6 @@
 
 ### Use Promise, child_process example
  - `cd /example-6 && npm run dev-start`
+
+### Use EventEmitter
+ - `cd /example-7 && npm run dev-start`
