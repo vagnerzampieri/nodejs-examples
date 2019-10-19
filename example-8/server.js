@@ -1,5 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
@@ -18,14 +21,9 @@ app.get("/posts", (req, res) => {
 });
 
 //Connect to DB
-mongoose.connect("mongodb://172.20.0.2:27017/test", {
+mongoose.connect(process.env.DB_CONNECTION, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
-
-const Cat = mongoose.model("Cat", { name: String });
-
-const kitty = new Cat({ name: "Zildjian" });
-kitty.save().then(() => console.log("meow"));
 
 app.listen(3000);
