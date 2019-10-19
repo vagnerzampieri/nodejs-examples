@@ -31,3 +31,7 @@ require('module').wrapper
 'function(exports, require, module, _flename, _dirname)'
 console.log(arguments);
 ```
+
+### Streams
+zip, crypto ... read, write, transform
+it's better use stream always
