@@ -1,6 +1,8 @@
 import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import bodyParser from "body-parser";
+
 import { postRouter } from "./routes/posts";
 
 const app = express();
@@ -8,6 +10,7 @@ const app = express();
 dotenv.config();
 
 // Middleware
+app.use(bodyParser.json());
 app.use("/posts", postRouter);
 
 //Connect to DB

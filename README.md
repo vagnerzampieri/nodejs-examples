@@ -34,3 +34,4 @@
  - `docker-compose up`
  - `cp .env.example .env` put IP address in `DB_CONTAINER`
  - `npm run dev-start`
+ - `curl -d '{"title":"This is a title", "description":"This is a description"}' -H "Content-Type: application/json" -X POST http://localhost:3000/posts`
