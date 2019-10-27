@@ -41,3 +41,4 @@
  - `cd /example-9`
  - `npm run dev-start`
  - `curl -d '{"name":"Your name", "email":"your@email.com", "password":"123456"}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/user/register`
+ - `curl -d '{"email":"your@email.com", "password":"123456"}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/user/login`

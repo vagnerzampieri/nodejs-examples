@@ -2,6 +2,7 @@ import express from "express";
 import bcrypt from "bcryptjs";
 import { User } from "../models/User";
 import { registerValidation } from "../validations/register";
+import { loginValidation } from "../validations/login";
 
 const router = express.Router();
 
@@ -33,4 +34,17 @@ router.post("/register", async (req, res) => {
   }
 });
 
+// /api/user/login
+router.post("/login", async (req, res) => {
+  const { error } = loginValidation(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
+  const user = await User.findOne({ email: req.body.email });
+  if (!user) return res.status(400).send("Email or password is wrong");
+
+  const validPass = await bcrypt.compare(req.body.password, user.password);
+  if (!validPass) return res.status(400).send("Email or password is wrong");
+
+  res.send("Logged in!");
+});
 export { router as authRouter };
