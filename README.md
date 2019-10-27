@@ -39,6 +39,8 @@
 #### Authentication with JWT
  - Build a Node.js API Authentication with JWT Tutorial - https://www.youtube.com/watch?v=2jqok-WgelI
  - `cd /example-9`
+ - `docker-compose up`
+ - `cp .env.example .env` put IP address in `DB_CONTAINER` and create a secret toke for `TOKEN_SECRET`
  - `npm run dev-start`
  - `curl -d '{"name":"Your name", "email":"your@email.com", "password":"123456"}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/user/register`
  - `curl -d '{"email":"your@email.com", "password":"123456"}' -H "Content-Type: application/json" -X POST http://localhost:3000/api/user/login`
