@@ -6,8 +6,13 @@ const router = express.Router();
 
 // /api/user/register
 router.post("/register", async (req, res) => {
+  // validate schema
   const { error } = registerValidation(req.body);
   if (error) return res.status(400).send(error.details[0].message);
+
+  // cheking if the user is already in the database
+  const emailExist = await User.findOne({ email: req.body.email });
+  if (emailExist) return res.status(400).send("Email already exists");
 
   const user = new User({
     name: req.body.name,
