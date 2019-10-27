@@ -5,6 +5,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 
 import { authRouter } from "./routes/auth";
+import { usersRouter } from "./routes/users";
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 
 // Route Middleware
 app.use("/api/user", authRouter);
+app.use("/api/users", usersRouter);
 
 // Connect to DB
 mongoose.connect(process.env.DB_CONNECTION, {
