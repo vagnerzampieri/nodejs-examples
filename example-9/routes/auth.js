@@ -1,5 +1,6 @@
 import express from "express";
 import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 import { User } from "../models/User";
 import { registerValidation } from "../validations/register";
 import { loginValidation } from "../validations/login";
@@ -45,6 +46,7 @@ router.post("/login", async (req, res) => {
   const validPass = await bcrypt.compare(req.body.password, user.password);
   if (!validPass) return res.status(400).send("Email or password is wrong");
 
-  res.send("Logged in!");
+  const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+  res.header("Auth-Token", token).send(token);
 });
 export { router as authRouter };
