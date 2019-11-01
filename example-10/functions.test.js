@@ -13,3 +13,26 @@ describe("#isNull", () => {
     expect(functions.isNull()).toBeNull();
   });
 });
+
+// Promise
+describe("#fetchUser", () => {
+  describe("when call name", () => {
+    test("returns Leanne Graham", () => {
+      expect.assertions(1);
+      return functions.fetchUser().then(data => {
+        expect(data.name).toEqual("Leanne Graham");
+      });
+    });
+  });
+});
+
+// Async / await
+describe("#fetchUser", () => {
+  describe("when call name", () => {
+    test("returns Leanne Graham", async () => {
+      expect.assertions(1);
+      const data = await functions.fetchUser();
+      expect(data.name).toEqual("Leanne Graham");
+    });
+  });
+});
