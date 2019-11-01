@@ -1,0 +1,19 @@
+{
+  "name": "example-10",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Jest example",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Vagner Zampieri",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
+  }
+}
