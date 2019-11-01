@@ -1,9 +1,15 @@
 import { functions } from "./functions";
 
-test("Adds 2 + 2 equal 4", () => {
-  expect(functions.add(2, 2)).toBe(4);
+describe("#add", () => {
+  describe("when 2 + 2", () => {
+    test("returns 4", () => {
+      expect(functions.add(2, 2)).toBe(4);
+    });
+  });
 });
 
-test("Should be null", () => {
-  expect(functions.isNull()).toBeNull();
+describe("#isNull", () => {
+  test("returns always null", () => {
+    expect(functions.isNull()).toBeNull();
+  });
 });
