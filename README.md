@@ -49,5 +49,6 @@
 #### Jest and Babel to use Node.js 12
  - Jest Crash Course - Unit Testing in JavaScript - https://www.youtube.com/watch?v=7r4xVDI2vho
  - Code - https://github.com/bradtraversy/jest_testing_basics
+ - Mocking Axios in Jest + Testing Async Functions - https://www.youtube.com/watch?v=9Yrd4aZkse8
  - `cd /example-10`
  - `npm test`
