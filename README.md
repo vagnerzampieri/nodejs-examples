@@ -1,5 +1,6 @@
 #### Links
  - Getting Started with Node.js - Full Tutorial - https://www.youtube.com/watch?v=gG3pytAY2MY
+ - Comprehensive and exhaustive JavaScript & Node.js testing best practices - https://github.com/goldbergyoni/javascript-testing-best-practices
 
 #### Examples
  - file `notes.md` has a lot of examples
@@ -52,3 +53,8 @@
  - Mocking Axios in Jest + Testing Async Functions - https://www.youtube.com/watch?v=9Yrd4aZkse8
  - `cd /example-10`
  - `npm test`
+  
+#### Graphql
+ - GraphQL Full Course - Novice to Expert - https://www.youtube.com/watch?v=ed8SzALpx1Q
+ - Code - https://github.com/iamshaunjp/graphql-playlist ... See branchs
+ - `cd /example-11/server`

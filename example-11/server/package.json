@@ -1,0 +1,29 @@
+{
+  "name": "example-11",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Graphql test",
+  "main": "index.js",
+  "scripts": {
+    "dev-start": "nodemon --exec babel-node app.js"
+  },
+  "keywords": [],
+  "author": "Vagner Zampieri",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "github:expressjs/express",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.7.9",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1"
+  }
+}
