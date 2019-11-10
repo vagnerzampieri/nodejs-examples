@@ -60,3 +60,44 @@
  - `cd /example-11/server`
  - `npm run dev-start`
  - graphiql is available for test
+ - Examples:
+```
+{
+    author(id: 1) {
+        name
+        age
+        books {
+            name
+        }
+    }
+}
+
+{
+    book(id: 1) {
+        name
+        genre
+        authors {
+            name
+            age
+        }
+    }
+}
+
+mutation {
+  addAuthor(name: "Homer Simpson", age: 42){
+    name
+    age
+    id
+  }
+}
+
+mutation {
+  addBook(name: "My new book", genre: "bio", authorId: "5dc88adafead565ce4faa9bf") {
+    name
+    genre
+    author {
+      name
+    }
+  }
+}
+```
