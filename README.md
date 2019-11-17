@@ -59,6 +59,8 @@
  - Code - https://github.com/iamshaunjp/graphql-playlist ... See branchs
  - `cd /example-11/server`
  - `npm run dev-start`
+ - `cd /example-11/client`
+ - `npm start`
  - graphiql is available for test
  - Examples:
 ```
