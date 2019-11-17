@@ -103,3 +103,9 @@ mutation {
   }
 }
 ```
+
+#### Redux
+ - Redux For Beginners | React Redux Tutorial - https://www.youtube.com/watch?v=CVpUuw9XSjY
+ - `cd example-12`
+ - `npm start`
+ - install redux chrome extension
