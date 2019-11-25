@@ -1,0 +1,17 @@
+{
+  "name": "example-13",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ISO json",
+  "main": "index.js",
+  "scripts": {
+    "dev-start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Vagner Zampieri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "github:expressjs/express",
+    "nodemon": "^2.0.1"
+  }
+}
