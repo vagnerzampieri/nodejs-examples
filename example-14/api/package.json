@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Test with Kafka",
+  "main": "src/server.js",
+  "scripts": {
+    "dev-start": "nodemon --exec babel-node src/server.js"
+  },
+  "keywords": [],
+  "author": "Vagner Zampieri",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "nodemon": "^2.0.1"
+  },
+  "dependencies": {
+    "express": "github:expressjs/express",
+    "kafkajs": "^1.11.0"
+  }
+}

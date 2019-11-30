@@ -113,3 +113,12 @@ mutation {
 #### Static files with Express
  - `cd example-13`
  - `npm run dev-start`
+
+#### Kafka
+ - Code Challenge: Micro-serviços com Node e Kafka - https://www.youtube.com/watch?v=-H8pD7sMcfo
+ - Code - https://github.com/Rocketseat/youtube-challenge-node-kafka
+ - `docker-compose up`
+ - `cd example-14/api`
+ - `npm run dev-start`
+ - `cd example-14/certification`
+ - `npm run dev-start`
