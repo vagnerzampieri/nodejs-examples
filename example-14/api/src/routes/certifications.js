@@ -13,7 +13,8 @@ router.post("/certifications", async (req, res) => {
     topic: 'issue-certificate',
     compression: CompressionTypes.GZIP,
     messages: [
-      { value: JSON.stringify(message) }
+      { value: JSON.stringify(message) },
+      { value: JSON.stringify({ ...message, user: { ...message.user, name: 'Jesus' } }) },
     ]
   });
 

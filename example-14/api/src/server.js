@@ -30,7 +30,15 @@ app.use("/", certificationRouter);
 async function run() {
   await producer.connect();
   await consumer.connect();
-  // await consumer.subscribe({ topic: 'certification-response' });
+
+  // receive certification service response
+  await consumer.subscribe({ topic: 'certification-response' });
+
+  await consumer.run({
+    eachMessage: async ({ topic, partition, message }) => {
+      console.log('Response', String(message.value));
+    },
+  });
 
   app.listen(3333);
 }

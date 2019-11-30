@@ -17,6 +17,16 @@ async function run() {
     eachMessage: async ({ topic, partition, message }) => {
       const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`;
       console.log(`- ${prefix} ${message.key}#${message.value}`);
+
+      // send message for api
+      const payload = JSON.parse(message.value);
+
+      producer.send({
+        topic: 'certification-response',
+        messages: [
+          { value:  `User certificate ${payload.user.name} from course ${payload.course} is generated!`}
+        ]
+      })
     }
   })
 };
